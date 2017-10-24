@@ -3,8 +3,8 @@ body{
 }
 .frm{
 	text-align:center;
-    /*border:1px solid black;*/
     padding:10px 150px;
     background:lightblue;
+    border-radius: 10px;
 }
 
