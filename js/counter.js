@@ -1,7 +1,9 @@
 
     var count=0;
-    var adds=document.querySelector("#add");
-    var subtracts=document.querySelector("#add"); 
+    var adds=document.querySelector("#productivityNum");
+    var subtracts=document.querySelector("#productivityNum"); 
+   
+  
     function increase(){ 	
     	count++;
     	adds.innerHTML=count;
@@ -14,6 +16,5 @@
     }
     function resetNum(){
     count=0;
-     document.getElementById("add").innerHTML= 0;
+     document.getElementById("productivityNum").innerHTML= 0;
     }
-  

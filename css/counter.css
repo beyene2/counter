@@ -3,9 +3,10 @@ body{
 }
 .frm{
 	text-align:center;
-    padding:10px 150px;
+    padding:10px;
     background:lightblue;
     border-radius: 10px;
+    max-width: 500px;
 }
 
 .btn{
