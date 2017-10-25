@@ -15,6 +15,12 @@
      subtracts.innerHTML=count;
     }
     function resetNum(){
-    count=0;
-     document.getElementById("productivityNum").innerHTML= 0;
+        if(count>0 &&count>20){
+            document.getElementById("productivityNum").innerHTML= "Great job on hitting " + count +"!";
+            count=0;
+        }else if(count<20 && count!=0){
+           document.getElementById("productivityNum").innerHTML= "Hm, you need to do higher than " + count +"!";
+            count=0;
+        }
+        
     }
