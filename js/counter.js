@@ -2,16 +2,18 @@
     var count=0;
     var adds=document.querySelector("#add");
     var subtracts=document.querySelector("#add"); 
-    function counter(add){ 	
+    function increase(){ 	
     	count++;
     	adds.innerHTML=count;
     }
     function decrease(){
-     count--;
+        if(count>0){
+        count--;
+        }
      subtracts.innerHTML=count;
     }
-     function zero(){
+    function resetNum(){
     count=0;
-     document.getElementById("add").innerHTML=0;
+     document.getElementById("add").innerHTML= 0;
     }
   
