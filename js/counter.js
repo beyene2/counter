@@ -1,9 +1,10 @@
 
     var count=0;
-    var adds=document.querySelector("#productivityNum");
-    var subtracts=document.querySelector("#productivityNum"); 
+    var adds=document.querySelector("#prod");
+    var subtracts=document.querySelector("#prod"); 
+    var currProd=document.querySelector("#prod");
+    var lastProd=document.querySelector("#lastprod");
    
-  
     function increase(){
         if(count<100){
     	count++;
@@ -17,12 +18,8 @@
      subtracts.innerHTML=count;
     }
     function resetNum(){
-        if(count!=0&&count>20){
-            document.getElementById("productivityNum").innerHTML= "Great job on hitting " + count +"!";
-            count=0;
-        }else if(count<20 && count!=0){
-           document.getElementById("productivityNum").innerHTML= "Hm, you need to do higher than " + count +"!";
-            count=0;
-        }
-        
+        lastProd.innerHTML=+count;
+        currProd.innerHTML= 0;
+        count=0;
     }
+ 
