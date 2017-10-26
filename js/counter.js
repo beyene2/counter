@@ -4,8 +4,10 @@
     var subtracts=document.querySelector("#productivityNum"); 
    
   
-    function increase(){ 	
+    function increase(){
+        if(count<100){
     	count++;
+        }
     	adds.innerHTML=count;
     }
     function decrease(){
@@ -15,7 +17,7 @@
      subtracts.innerHTML=count;
     }
     function resetNum(){
-        if(count>0 &&count>20){
+        if(count!=0&&count>20){
             document.getElementById("productivityNum").innerHTML= "Great job on hitting " + count +"!";
             count=0;
         }else if(count<20 && count!=0){
