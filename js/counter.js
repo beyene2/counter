@@ -1,4 +1,4 @@
-
+    var style=style;
     var count=0;
     var adds=document.querySelector("#prod");
     var subtracts=document.querySelector("#prod"); 
